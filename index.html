@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Wesołych Świąt!</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      width: 100%;
+    }
+
+    header {
+      background-color: #c33;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #333;
+      color: #ffff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 15px;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100vh - 186px); 
+    }
+
+    #santa {
+      width: 300px;
+      animation: kiwaj 3s ease-in-out infinite;
+    }
+
+    @keyframes kiwaj {
+      0% { transform: rotate(0); }
+      50% { transform: rotate(30deg); }
+      100% { transform: rotate(0); }
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Wesołych Świąt!</h1>
+  </header>
+  <nav>
+    <a href="#home">HO-HO-HO!</a>
+  </nav>
+  <div class="content" id="home">
+    <img id="santa" src="/santa.jpg" alt="Święty Mikołaj">
+  </div>
+  <footer>
+    &copy; 2023 Wesołych Świąt!
+  </footer>
+</body>
+</html>
